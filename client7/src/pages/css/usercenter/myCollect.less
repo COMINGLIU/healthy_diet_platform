@@ -1,0 +1,61 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+#content .sub-menu li:nth-child(2){
+  background-color: @vice-color !important;
+}
+#content .sub-menu li:nth-child(2) a{
+  color: #fff;
+}
+h3 {
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid @base-color;
+  font-size: 16px;
+  line-height: 40px;
+}
+// 
+.myCollection li {
+  position: relative;
+  padding: 20px;
+  padding-right: 100px;
+  border-bottom: .2px solid rgba(240,240,240,.5);
+  cursor: pointer;
+}
+.myCollection li .del {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  color: #ccc;
+  cursor: pointer;
+}
+.myCollection li:hover .del {
+  display: block; 
+}
+.myCollection li .del i {
+  font-size: 20px;
+}
+.myCollection li .del:hover, 
+.myCollection li .del:focus{
+  color: @vice-color;
+}
+.myCollection li:hover {
+  background-color: @base2-color;
+}
+.myCollection h4 i{
+  margin: 0 10px;
+}

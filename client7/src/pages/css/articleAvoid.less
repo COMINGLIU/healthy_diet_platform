@@ -1,0 +1,65 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+.article-header ul li:nth-child(3){
+  background-color: @vice4-color;
+}
+article {
+  background-color: transparent !important;
+}
+article ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+article li {
+  overflow: hidden;
+  width: 220px;
+  height: 120px;
+  margin: 20px 0;  
+  background-color: #fff;
+  text-align: center;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px){
+  article li {
+    width: 320px;
+  }
+}
+article li:hover {
+  box-shadow: 0 0 15px #ccc;
+  transform: translateY(-5px);
+}
+article li h4 {
+  margin: 10px auto;
+  color: @h4-title-color;
+}
+article li p {
+  font-size: 12px;
+  color: @p-title-color;
+  text-indent: 12px;
+  line-height: 20px;
+}
+article li i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  border-radius: 50%;
+  font-style: normal;
+  background-color: @vice4-color;
+  color: #fff;
+}

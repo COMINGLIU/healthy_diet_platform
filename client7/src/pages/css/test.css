@@ -1,0 +1,64 @@
+#chat {
+  position: relative;
+  width: 400px;
+  box-shadow: 0 0 10px #ccc;
+}
+#chat h3 {
+  background-color: #262a3f;
+  color: #fff;
+}
+#chat .chat-box {
+  position: relative;
+  height: 200px;
+}
+#chat .chat-box input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  text-indent: 8px;
+}
+.chatInfo i {
+  color: #262a3f;
+  font-size: 25px;
+}
+.chatInfo > ul li {
+  margin: 10px 0;
+}
+.chatInfo > ul li > div {
+  margin: 10px 0;
+}
+.chatInfo > ul li > div:nth-child(1) {
+  text-align: right;
+}
+.chatInfo > ul li > div p:nth-child(2) {
+  display: inline-block;
+  margin: 4px 20px;
+  background-color: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.chatInfo button {
+  background-color: transparent;
+  cursor: pointer;
+}
+.chatInfo button i {
+  color: #999;
+  font-size: 20px;
+}
+.chatInfo button:hover i,
+.chatInfo button:focus i {
+  color: #000;
+}
+#chat audio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}

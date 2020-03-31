@@ -1,0 +1,154 @@
+.regist-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+#regist {
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  padding: 0 20px 20px 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: #fff;
+}
+#regist h3 {
+  line-height: 40px;
+  color: #666;
+  text-align: center;
+}
+.face-info {
+  line-height: 14px;
+  height: 14px;
+  color: #98cb2b !important;
+}
+#regist p {
+  margin: 20px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+#regist p input,
+#regist p i {
+  display: inline-block;
+  vertical-align: middle;
+}
+#regist p i {
+  width: 15%;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ccc;
+}
+#regist p input:not([type="submit"]) {
+  box-sizing: border-box;
+  width: 85%;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  box-shadow: 0 0 10px #ccc inset;
+}
+#regist p input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: #00712e;
+  color: #fff;
+  cursor: pointer;
+}
+#regist p input[type="submit"]:hover,
+#regist p input[type="submit"]:focus {
+  background-color: #262a3f;
+}
+#regist .fill-pass {
+  position: relative;
+}
+#regist p .forget-pass {
+  position: absolute;
+  font-size: 10px;
+  bottom: -18px;
+  right: 0;
+}
+#regist .check-method {
+  position: relative;
+}
+#regist .check-method:before,
+#regist .check-method:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: .5px;
+  background-color: rgba(204, 204, 204, 0.5);
+  margin: auto;
+  content: '';
+}
+#regist .check-method:before {
+  left: 0;
+}
+#regist .check-method:after {
+  right: 0;
+}
+#regist .regist-method span {
+  margin: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#regist .regist-method span:hover {
+  color: #00712e;
+}
+#regist .goto-login {
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00712e;
+  color: #00712e;
+  cursor: pointer;
+}
+#regist .goto-login:hover {
+  background-color: #00712e;
+  color: #fff;
+}
+#regist .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+#regist .close-btn:hover {
+  background-color: #f0f0f0;
+}
+#regist .face-regist .face {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.face {
+  position: relative;
+}
+.face canvas,
+.face video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+}
+.face canvas {
+  display: none;
+}

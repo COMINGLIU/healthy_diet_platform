@@ -1,0 +1,92 @@
+.article-header ul li:nth-child(1) {
+  background-color: #00712e;
+}
+article > ul li,
+article .weak {
+  margin-bottom: 40px;
+}
+article > ul li:nth-child(1) {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+article .weak {
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+article > ul li h3,
+article .weak h3 {
+  background-color: #00712e;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+article > ul li p,
+article .weak p {
+  position: relative;
+  padding: 10px 0 10px 100px;
+  margin-bottom: 10px;
+  align-items: center;
+  color: #888;
+  line-height: 20px;
+  font-size: 12px;
+}
+article > ul li p:nth-of-type(1):before,
+article > ul li p:nth-of-type(2):before,
+article > ul li p:nth-of-type(3):before,
+article .weak p:nth-of-type(1):before,
+article .weak p:nth-of-type(2):before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  background-color: rgba(0, 113, 46, 0.1);
+  line-height: 100%;
+  text-align: center;
+}
+article > ul li p:nth-of-type(1):before {
+  content: '特征';
+}
+article > ul li p:nth-of-type(2):before {
+  content: '健康忠告';
+}
+article > ul li p:nth-of-type(3):before {
+  content: '对应蔬菜';
+}
+article .weak p:nth-of-type(1):before {
+  content: '特征';
+}
+article .weak p:nth-of-type(2):before {
+  content: '对应蔬菜';
+}
+article .weak h4 {
+  line-height: 40px;
+  color: #666;
+}
+article .weak li {
+  margin-bottom: 40px;
+}
+article .sub-menu {
+  position: fixed;
+  left: 2%;
+  top: 150px;
+  width: 11%;
+}
+article .sub-menu ul,
+article .sub-menu ul li {
+  width: 100%;
+}
+article .sub-menu li {
+  height: 40px;
+  background-color: #00712e;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+article .sub-menu li:hover {
+  background-color: #53a946;
+}

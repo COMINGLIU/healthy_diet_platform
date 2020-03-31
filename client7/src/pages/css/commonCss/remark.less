@@ -1,0 +1,102 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+#remark {
+  color: @p-title-color;
+  margin-top: 60px;
+  padding-top: 20px;
+}
+#remark .remark-btn{
+  font-size: 12px;
+}
+#remark .remark-btn span{
+  margin-right: 20px;
+  cursor: pointer;
+}
+#remark .remark-btn span:nth-child(2){
+  color: @vice-color;
+  text-decoration: underline;
+}
+#remark .remarkValue {
+  margin: 10px 0;
+}
+#remark .remarkValue textarea{
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(204,204,204,.4);
+  resize: none;
+}
+#remark>ul>li {
+  border-bottom: 1px solid rgba(204,204,204,.4);
+  margin: 20px 0;
+}
+#remark li p {
+  font-size: 12px;
+  line-height: 20px;
+}
+#remark li>p:nth-child(1){
+  color: @theme-color;
+}
+#remark li>p:nth-child(3){
+  font-size: 10px;
+  text-align: right;
+}
+#remark li>p:nth-child(3) span {
+  margin-left: 15px;
+}
+#remark li>p:nth-child(3) span:nth-child(2),
+#remark li>p:nth-child(3) span:nth-child(3){
+  color: @vice-color;
+  cursor: pointer;
+}
+#remark .reply{
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 30px;
+  height: 0;
+  // padding: 20px;
+  background-color: @base2-color;
+}
+#remark .reply textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(204,204,204,.4);
+  resize: none;
+}
+input[name="remarkSub"],
+input[name="replySub"] {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  border: 1px solid @vice-color;
+  margin-bottom: 10px;
+  color: @vice-color; 
+  background-color: transparent;
+  cursor: pointer;
+}
+input[name="remarkSub"]:hover,
+input[name="replySub"]:hover,
+input[name="remarkSub"]:focus,
+input[name="replySub"]:focus {
+  color: #fff; 
+  background-color: @vice-color;
+}
+.sub-p {
+  text-align: right;
+}
+#remark i.icon-shanchu {
+  color: @vice-color;
+  margin-left: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}

@@ -1,0 +1,178 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+#vegCollocation{
+  background-color: @base-color;
+}
+// header
+header {
+  position: static !important;
+  background-color: #fff !important;
+  color: @vice4-color !important;
+}
+header nav {
+  color: @h4-title-color !important;
+}
+header nav input {
+  border: 1px solid @vice-color !important;
+}
+nav .header-search i{
+  background-color: @vice-color !important;
+  color: #fff !important;
+}
+article {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+@media screen and (max-width: 800px){
+  article {
+    width: 90%;
+  }
+}
+#veg-name {
+  text-align: center;
+}
+#veg-name figure{
+  display: inline-block;
+  width: 150px;
+  height: 170px;
+}
+#veg-name figure img {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 470px){
+  #veg-name figure{
+    width: 100px;
+    height: 120px;
+  }
+  #veg-name figure img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 374px){
+  #veg-name figure{
+    width: 60px;
+    height: 80px;
+  }
+  #veg-name figure img {
+    width: 60px;
+    height: 60px;
+  }
+}
+#veg-name figcaption {
+  line-height: 20px;
+}
+#veg-name figcaption:hover {
+  color: @theme-color;
+}
+#veg-name i {
+  margin: 0 20px;
+  line-height: 170px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: @vice-color;
+  color: #fff;
+}
+#veg-name i,
+#veg-name figure {
+  vertical-align: middle;
+}
+#veg-effect {
+  margin: 20px 0;
+  line-height: 30px;
+}
+#veg-effect span{
+  display: inline-block;
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 10px;
+  background-color: @vice-color;
+  color:#fff;
+  text-align: center;
+}
+#nutrient-index h3 {
+  color: @vice-color;
+  line-height: 40px;
+  font-weight: normal;
+  text-align: center;
+}
+#nutrient-index {
+  margin: 20px 0;
+}
+#nutrient-index ul li{
+  border-bottom: 0.5px solid #eee;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  font-size: 12px;
+}
+#nutrient-index ul li:nth-child(2){
+  color: @theme-color;
+}
+#nutrient-index ul:nth-of-type(1){
+  color: #888;
+}
+@media screen and (min-width: 950px) {
+  #nutrient-index ul {
+    width: 100%;
+    text-align: center;
+  }
+  #nutrient-index ul li{
+    display: inline-block;
+    width: calc(100% / 13); 
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 950px) {
+  #nutrient-index ul {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+    vertical-align: top;
+  }
+}
+// 搭配推荐
+#veg-collo-recommentd h3 {
+  line-height: 30px;
+  color: @vice-color;
+  text-align: center;
+}
+#veg-collo-recommentd li {
+  padding: 10px 0;
+  border-bottom: rgba(204,204,204,.2);
+  font-size: 12px;
+  cursor: pointer;
+}
+#veg-collo-recommentd h4 a:visited,
+#veg-collo-recommentd h4 a:hover{
+  color: @theme-color;
+}
+#veg-collo-recommentd li:hover {
+  background: @base2-color;
+}
+#veg-collo-recommentd li h4 {
+  font-weight: normal;
+  line-height: 30px;
+}
+#veg-collo-recommentd li p {
+  line-height: 20px;
+  color: @p-title-color;
+}
+#veg-collo-recommentd li h4 i {
+  margin: 0 10px;
+}

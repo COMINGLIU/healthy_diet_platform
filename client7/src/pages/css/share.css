@@ -1,0 +1,155 @@
+#share {
+  background-color: #f0f0f0;
+}
+header {
+  position: static !important;
+  background-color: #fff !important;
+  color: #00712e !important;
+}
+header nav {
+  color: #666 !important;
+}
+header nav input {
+  border: 1px solid #98cb2b !important;
+}
+nav .header-search i {
+  background-color: #98cb2b !important;
+  color: #fff !important;
+}
+article {
+  box-sizing: border-box;
+  padding-top: 20px;
+  font-size: 0;
+}
+#content {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 70%;
+  border-left: 100px solid #f0f0f0;
+  background-color: #fff;
+  font-size: 14px;
+  vertical-align: top;
+}
+article .sub-menu {
+  position: fixed;
+  left: 10px;
+  width: 80px;
+  box-shadow: 0 0 4px #ccc;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+article .sub-menu a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+}
+@media screen and (min-width: 375px) {
+  #content li video {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #content li video,
+  #content li audio {
+    width: 100%;
+  }
+}
+#right {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  height: 500px;
+  border-left: 10px solid #f0f0f0;
+  vertical-align: top;
+  font-size: 14px;
+}
+@media screen and (min-width: 800px) {
+  article .sub-menu {
+    top: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  article .sub-menu {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 650px) {
+  article .sub-menu {
+    width: 40px;
+    left: 0;
+  }
+  #content {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    border-left: 42px solid #f0f0f0;
+  }
+  #right {
+    display: none;
+  }
+}
+#content > ul > li {
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+#content > ul > li h3 {
+  line-height: 30px;
+  font-size: 16px;
+}
+#content > ul > li h3:hover {
+  color: #98cb2b;
+}
+#content > ul > li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #888;
+  font-size: 12px;
+}
+.w-e-toolbar {
+  flex-wrap: wrap;
+}
+.upload-info {
+  position: relative;
+  box-sizing: border-box;
+  height: 30px;
+  margin-top: 20px;
+  color: #888;
+  text-align: right;
+  font-size: 10px;
+  line-height: 30px;
+}
+.upload-info li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.upload-info p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 30px;
+  margin: auto;
+}
+@media screen and (max-width: 374px) {
+  .upload-info {
+    margin-top: 50px;
+  }
+  .upload-info p {
+    top: -30px;
+  }
+}
+.upload-info p i,
+.upload-info p span {
+  vertical-align: top;
+}
+.upload-info span {
+  margin-left: 5px;
+}

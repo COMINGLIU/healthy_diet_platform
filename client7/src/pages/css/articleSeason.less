@@ -1,0 +1,88 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+.article-header ul li:nth-child(2){
+  background-color: @vice4-color;
+}
+article {
+  background-color: transparent !important;
+}
+article>ul>li {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+article>ul>li h3{
+  line-height: 40px;
+  // background-color: #fff;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+article>ul>li h4 {
+  box-sizing: border-box;
+  color: @h4-title-color;
+  padding: 20px 20px 0 20px;
+}
+article>ul>li p {
+  color: @p-title-color;
+}
+article>ul>li:nth-child(1) h3{
+  background-color: @vice4-color;
+}
+article>ul>li:nth-child(2) h3{
+  background-color: @theme-color;
+}
+article>ul>li:nth-child(3) h3{
+  background-color: @vice-color;
+}
+article>ul>li:nth-child(4) h3{
+  background-color: #ccc;
+}
+// 下一层ul
+article>ul>li ul {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  font-size: 12px;
+}
+article>ul>li ul li p {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+article>ul>li ul li p:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+article>ul>li:nth-child(1) ul li p:before{
+  background-color: @vice4-color;
+}
+article>ul>li:nth-child(2) ul li p:before{
+  background-color: @theme-color;
+}
+article>ul>li:nth-child(3) ul li p:before{
+  background-color: @vice2-color;
+}
+article>ul>li:nth-child(4) ul li p:before{
+  background-color: #ccc;
+}

@@ -1,0 +1,72 @@
+.article-header ul li:nth-child(4) {
+  background-color: #00712e;
+}
+article {
+  position: relative;
+  width: 98% !important;
+  margin: 0 1%;
+  background-color: transparent !important;
+}
+article .left,
+article .right {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+}
+article .left > div,
+article .right > div {
+  margin-bottom: 40px;
+}
+article .left li,
+article .right li {
+  margin-bottom: 20px;
+}
+article .left h3,
+article .right h3 {
+  line-height: 40px;
+  text-align: center;
+}
+article .left h3 {
+  color: #00712e;
+}
+article .left h4,
+article .right h4 {
+  color: #666;
+  line-height: 30px;
+}
+article .left p,
+article .left span,
+article .right p {
+  color: #888;
+  font-size: 12px;
+  line-height: 20px;
+}
+article .left {
+  width: 70%;
+  background-color: #fff;
+}
+article .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  background-color: #fff;
+}
+@media screen and (max-width: 700px) {
+  article .left {
+    width: 100%;
+  }
+  article .right {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.nutritionTogreens li span:nth-child(1) {
+  display: inline-block;
+  background-color: #ccc;
+  color: #fff;
+  width: 100px;
+  margin-right: 20px;
+  text-align: center;
+}

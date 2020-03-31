@@ -1,0 +1,50 @@
+#content .sub-menu li:nth-child(5) {
+  background-color: #98cb2b !important;
+}
+#content .sub-menu li:nth-child(5) a {
+  color: #fff;
+}
+h3 {
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+  line-height: 40px;
+}
+.myPost li {
+  position: relative;
+  padding-right: 100px !important;
+  border-bottom: 0.2px solid rgba(240, 240, 240, 0.5);
+  cursor: pointer;
+}
+.myPost li .del,
+.myPost li .edit {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: transparent;
+  color: #ccc;
+  cursor: pointer;
+}
+.myPost li .edit {
+  display: flex;
+  align-items: center;
+}
+.myPost li .del i,
+.myPost li .edit {
+  font-size: 20px;
+}
+.myPost li .del:hover,
+.myPost li .del:focus,
+.myPost li .edit:hover,
+.myPost li .edit:focus {
+  color: #98cb2b;
+}
+.myPost li:hover {
+  background-color: #f3f9f9;
+}
+.myPost li .edit {
+  right: 70px;
+}

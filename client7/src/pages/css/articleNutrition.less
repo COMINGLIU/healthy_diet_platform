@@ -1,0 +1,86 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+.article-header ul li:nth-child(4){
+  background-color: @vice4-color;
+}
+article {
+  position: relative;
+  width: 98% !important;
+  margin: 0 1%;
+  background-color: transparent !important;
+}
+article .left,
+article .right {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+}
+article .left>div,
+article .right>div, {
+  margin-bottom: 40px;
+}
+article .left li,
+article .right li {
+  margin-bottom: 20px;
+}
+article .left h3,
+article .right h3 {
+  line-height: 40px;
+  text-align: center;
+}
+article .left h3{
+  color: @vice4-color;
+}
+article .left h4,
+article .right h4 {
+  color: @h4-title-color;
+  line-height: 30px;
+}
+article .left p,
+article .left span,
+article .right p {
+  color: @p-title-color;
+  font-size: 12px;
+  line-height: 20px;
+}
+article .left {
+  width: 70%;
+  background-color: #fff;
+}
+article .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  background-color: #fff;
+}
+@media screen and (max-width: 700px){
+  article .left {
+    width: 100%;
+  }
+  article .right {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.nutritionTogreens li span:nth-child(1){
+  display: inline-block;
+  background-color: #ccc;
+  color: #fff;
+  // color: @vice4-color;
+  width: 100px;
+  margin-right: 20px;
+  text-align: center;
+}

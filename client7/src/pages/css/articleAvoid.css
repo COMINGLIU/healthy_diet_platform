@@ -1,0 +1,52 @@
+.article-header ul li:nth-child(3) {
+  background-color: #00712e;
+}
+article {
+  background-color: transparent !important;
+}
+article ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+article li {
+  overflow: hidden;
+  width: 220px;
+  height: 120px;
+  margin: 20px 0;
+  background-color: #fff;
+  text-align: center;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  article li {
+    width: 320px;
+  }
+}
+article li:hover {
+  box-shadow: 0 0 15px #ccc;
+  transform: translateY(-5px);
+}
+article li h4 {
+  margin: 10px auto;
+  color: #666;
+}
+article li p {
+  font-size: 12px;
+  color: #888;
+  text-indent: 12px;
+  line-height: 20px;
+}
+article li i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  border-radius: 50%;
+  font-style: normal;
+  background-color: #00712e;
+  color: #fff;
+}

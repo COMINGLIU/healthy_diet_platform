@@ -1,0 +1,98 @@
+#userCenter {
+  background-color: #f0f0f0;
+}
+header {
+  position: static !important;
+  background-color: #fff;
+  color: #00712e !important;
+}
+header nav {
+  color: #666;
+}
+header nav input {
+  border: 1px solid #98cb2b !important;
+}
+nav .header-search i {
+  background-color: #98cb2b !important;
+  color: #fff !important;
+}
+#content {
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+  font-size: 0;
+}
+#content .sub-menu,
+#content .user-detail {
+  display: inline-block;
+  box-shadow: 0 0 10px #f0f0f0;
+  background-color: #fff;
+  vertical-align: top;
+}
+#content .sub-menu {
+  width: 20%;
+  line-height: 30px;
+  text-align: center;
+  color: #666;
+}
+#content .sub-menu ul {
+  width: 100%;
+  font-size: 0;
+}
+#content .sub-menu ul li {
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#content .sub-menu a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+}
+#content .sub-menu ul li:hover {
+  background-color: #f3f9f9;
+}
+#content .user-detail {
+  width: 80%;
+}
+@media screen and (max-width: 460px) {
+  #content .sub-menu,
+  #content .user-detail {
+    width: 100%;
+    display: block;
+  }
+  #content .sub-menu ul li {
+    display: inline-block;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+.user-detail-info {
+  font-size: 12px;
+}
+.user-detail-info li {
+  padding: 20px;
+}
+.user-detail-info li h4 {
+  line-height: 30px;
+  color: #00712e;
+  cursor: pointer;
+}
+.user-detail-info h4 a:visited,
+.user-detail-info h4 a:hover {
+  color: #53a946;
+}
+.user-detail-info li span {
+  margin-right: 10px;
+}
+.user-detail-info p {
+  line-height: 20px;
+}
+.myRemark time {
+  display: block;
+  color: #888;
+  text-align: right;
+}

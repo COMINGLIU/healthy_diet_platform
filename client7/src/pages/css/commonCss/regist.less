@@ -1,0 +1,171 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+.regist-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 20;
+}
+#regist {
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  padding: 0 20px 20px 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: #fff;
+}
+#regist h3 {
+  line-height: 40px;
+  color: @h4-title-color;
+  text-align: center;
+}
+.face-info{
+  line-height: 14px;
+  height: 14px;
+  color: @vice-color !important;
+}
+#regist p {
+  margin: 20px;
+  font-size: 12px;
+  color: @p-title-color;
+  text-align: center;
+}
+#regist p input,
+#regist p i {
+  display: inline-block;
+  vertical-align: middle;
+}
+#regist p i {
+  width: 15%;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ccc;
+}
+#regist p input:not([type="submit"]){
+  box-sizing: border-box;
+  width: 85%;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  box-shadow: 0 0 10px #ccc inset;
+}
+#regist p input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: @vice4-color;
+  color: #fff;
+  cursor: pointer;
+}
+#regist p input[type="submit"]:hover,
+#regist p input[type="submit"]:focus {
+  background-color: @vili-color;
+}
+#regist .fill-pass{
+  position: relative;
+}
+#regist p .forget-pass{
+  position: absolute;
+  font-size: 10px;
+  bottom: -18px;
+  right: 0;
+}
+//切换登录方式 
+#regist .check-method {
+  position: relative;
+}
+#regist .check-method:before,
+#regist .check-method:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: .5px;
+  background-color: rgba(204,204,204,.5);
+  margin: auto;
+  content: '';
+}
+#regist .check-method:before {
+  left: 0;
+}
+#regist .check-method:after {
+  right: 0;
+}
+// 登录方式选择
+#regist .regist-method span {
+  margin: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#regist .regist-method span:hover {
+  color: @vice4-color;
+}
+#regist .goto-login {
+  box-sizing: border-box;
+  height: 30px;   
+  line-height: 30px;
+  border: 1px solid @vice4-color;
+  color: @vice4-color;
+  cursor: pointer;
+}
+#regist .goto-login:hover {
+  background-color: @vice4-color;
+  color: #fff;
+}
+// 关闭按钮
+#regist .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+#regist .close-btn:hover {
+  background-color: @base-color;
+}
+// 人脸登录
+#regist .face-regist .face {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.face {
+  position: relative;
+}
+.face canvas,
+.face video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+}
+.face canvas{
+  display: none;
+}

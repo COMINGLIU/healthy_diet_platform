@@ -1,0 +1,112 @@
+@theme-color:  rgb(83,169,70);
+@vice-color: rgb(152,203,43);
+@vice2-color: rgb(205,224,151);
+@vice3-color: rgb(255,240,113);
+@vice4-color: rgb(0,113,46);
+@base-color: rgb(240,240,240);
+@base2-color: rgb(243,249,249);
+@nav-color: #666;
+@font-color: rgb(48,60,66);
+@h4-title-color: #666;
+@p-title-color: #888;
+@vili-color: rgb(38,42,63);
+
+#userCenter {
+  background-color: @base-color;
+}
+header {
+  position: static !important;
+  background-color: #fff;
+  color: @vice4-color !important;
+}
+header nav {
+  color: @h4-title-color;
+}
+header nav input {
+  border: 1px solid @vice-color !important;
+}
+nav .header-search i{
+  background-color: @vice-color !important;
+  color: #fff !important;
+}
+#content {
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+  font-size: 0;
+}
+#content .sub-menu,
+#content .user-detail {
+  display: inline-block;
+  box-shadow: 0 0 10px @base-color;
+  background-color: #fff;
+  vertical-align: top;
+}
+#content .sub-menu{
+  width: 20%;
+  line-height: 30px;
+  text-align: center;
+  color: @h4-title-color;
+}
+#content .sub-menu ul {
+  width: 100%;
+  font-size: 0;
+}
+#content .sub-menu ul li{
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#content .sub-menu a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: @h4-title-color;
+}
+#content .sub-menu ul li:hover {
+  background-color: @base2-color
+}
+#content .user-detail{
+  width: 80%;
+}
+@media screen and (max-width: 460px){
+  #content .sub-menu,
+  #content .user-detail{
+    width: 100%;
+    display: block;
+  }
+  #content .sub-menu ul li{
+    display: inline-block;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+// .user-detail
+.user-detail-info {
+  font-size: 12px;
+}
+.user-detail-info li {
+  padding: 20px;
+}
+.user-detail-info li h4 {
+  line-height: 30px;
+  color: @vice4-color;
+  cursor: pointer;
+}
+.user-detail-info h4 a:visited,
+.user-detail-info h4 a:hover{
+  color: @theme-color;
+}
+.user-detail-info li span {
+  margin-right: 10px;
+}
+.user-detail-info p {
+  line-height: 20px;
+}
+.myRemark time {
+  display: block;
+  color: #888;
+  text-align: right
+}

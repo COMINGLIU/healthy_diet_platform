@@ -1,0 +1,73 @@
+.article-header ul li:nth-child(2) {
+  background-color: #00712e;
+}
+article {
+  background-color: transparent !important;
+}
+article > ul > li {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+article > ul > li h3 {
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+article > ul > li h4 {
+  box-sizing: border-box;
+  color: #666;
+  padding: 20px 20px 0 20px;
+}
+article > ul > li p {
+  color: #888;
+}
+article > ul > li:nth-child(1) h3 {
+  background-color: #00712e;
+}
+article > ul > li:nth-child(2) h3 {
+  background-color: #53a946;
+}
+article > ul > li:nth-child(3) h3 {
+  background-color: #98cb2b;
+}
+article > ul > li:nth-child(4) h3 {
+  background-color: #ccc;
+}
+article > ul > li ul {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  font-size: 12px;
+}
+article > ul > li ul li p {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+article > ul > li ul li p:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+article > ul > li:nth-child(1) ul li p:before {
+  background-color: #00712e;
+}
+article > ul > li:nth-child(2) ul li p:before {
+  background-color: #53a946;
+}
+article > ul > li:nth-child(3) ul li p:before {
+  background-color: #cde097;
+}
+article > ul > li:nth-child(4) ul li p:before {
+  background-color: #ccc;
+}
